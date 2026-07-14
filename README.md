@@ -1,8 +1,8 @@
-# 🔧 Predictive Machine Failure - Machine Learning Pipeline
+# 🔧 Sistema Previsor de Falhas (SISPREV) - Machine Learning Pipeline
 
 ## 📌 Sobre o Projeto
 
-O **Predictive Machine Failure** é um software desenvolvido para prever falhas mecânicas em equipamentos industriais utilizando técnicas de Ciência de Dados e Machine Learning.
+O **SISPREV** é um software desenvolvido para prever falhas mecânicas em equipamentos industriais utilizando técnicas de Ciência de Dados e Machine Learning.
 
 O projeto simula um ambiente industrial monitorado por sensores, onde diferentes variáveis operacionais são utilizadas para identificar antecipadamente máquinas com maior probabilidade de falha.
 
@@ -37,7 +37,9 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
 * Matplotlib
 * Seaborn
 * Scikit-Learn
-* Imbalanced-Learn (SMOTE)
+* RandomUnderSampler
+* Statsmodels (para cálculo do VIF)
+* Imblearn (para balanceamento com Random Under Sampler)
 
 ## Algoritmos de Machine Learning
 
@@ -52,8 +54,9 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
 * Remoção de Duplicatas
 * Identificação de Outliers
 * Feature Engineering
-* Label Encoding
-* Balanceamento de Classes com SMOTE
+* One-Hot Encoding
+* Verificação de Multicolinearidade por meio de VIF (extra)
+* Balanceamento de Classes com RandomUnderSampler
 * Padronização com StandardScaler
 * Ajuste de Hiperparâmetros
 * Avaliação de Overfitting
@@ -76,10 +79,10 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
          Feature Engineering
                     │
                     ▼
-      Balanceamento (SMOTE)
+      Balanceamento (RandomUnderSampler)
                     │
                     ▼
-       Divisão Treino/Teste
+  Divisão Treino/Teste (seeds: 43, 123 e 64)
                     │
                     ▼
      Escalonamento (StandardScaler)
@@ -90,13 +93,13 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
           └── Árvore de Decisão
                     │
                     ▼
-      Ajuste de Hiperparâmetros
+        Ajuste de Hiperparâmetros
                     │
                     ▼
-       Avaliação dos Modelos
+         Avaliação dos Modelos
                     │
                     ▼
-          Modelo Final
+              Modelo Final
 ```
 
 ---
@@ -171,7 +174,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Abra o arquivo
+Abra o arquivo e aponte para o dataset
 
 ```
 Projeto_Final_Mod_1_SCTEC.ipynb
@@ -201,9 +204,9 @@ e execute todas as células na ordem.
 
 ✔ Codificação de variável categórica
 
-✔ Balanceamento utilizando SMOTE
+✔ Balanceamento utilizando Random Under Sampler
 
-✔ Separação entre treino e teste
+✔ Separação entre treino e teste com 3 diferentes seeds
 
 ✔ Padronização dos dados
 
@@ -254,4 +257,9 @@ O projeto pode ser expandido com diversas melhorias, como:
 Fábio Rodrigues Spiazzi - fabiospiazzi@gmail.com
 Desenvolvido como projeto final do módulo 1 do curso de IA para análise preditiva.
 
+
 ---
+
+# 🔗 Link do Vídeo de Apresentação
+
+https://drive.google.com/drive/folders/1BZN-ylh2af6EfBhIW_enJ9qtfGR5MoTD?usp=sharing
