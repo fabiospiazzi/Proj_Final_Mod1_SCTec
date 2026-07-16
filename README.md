@@ -99,7 +99,7 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
          Avaliação dos Modelos
                     │
                     ▼
-              Modelo Final
+        Modelo Final Selecionado
 ```
 
 ---
@@ -109,9 +109,17 @@ Este projeto utiliza algoritmos de classificação para prever se uma máquina a
 ```text
 Projeto/
 │
+├─📁 imagens_exportadas (Pasta)
+    └── box_plot_preditoreas.png
+    └── gráfico_após_balanceamento.png
+    └── histograma_variáveis_preditoras.png
+    └── mapa_de_calor_com_feature_engineering.png
+    └── mapa_de_calor_sem_feature_engineering.png
+    └── taxa_desbalanceamento_target.png
 ├── Projeto_Final_Mod_1_SCTEC.ipynb
-├── dataset.csv
+├── manutencao_preditiva.csv
 ├── README.md
+├── gitignore
 └── requirements.txt
 ```
 
@@ -255,7 +263,7 @@ O projeto pode ser expandido com diversas melhorias, como:
 # 👨‍💻 Autor
 
 Fábio Rodrigues Spiazzi - fabiospiazzi@gmail.com
-Desenvolvido como projeto final do módulo 1 do curso de IA para análise preditiva.
+Desenvolvido como projeto final do módulo 1 do curso de IA para análise preditiva (SCTec - SENAI).
 
 
 ---
