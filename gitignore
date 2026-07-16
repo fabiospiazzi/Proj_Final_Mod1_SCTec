@@ -1,0 +1,60 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+
+# ============================
+# Jupyter / Google Colab
+# ============================
+.ipynb_checkpoints/
+
+# Arquivos temporários gerados pelo Colab
+/content/
+
+# ============================
+# Ambientes virtuais
+# ============================
+venv/
+.venv/
+env/
+
+# ============================
+# VS Code / PyCharm
+# ============================
+.vscode/
+.idea/
+
+# ============================
+# Cache
+# ============================
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# ============================
+# Arquivos temporários
+# ============================
+*.log
+*.tmp
+*.bak
+
+# ============================
+# Sistema Operacional
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================
+# Variáveis de ambiente
+# ============================
+.env
+.env.*
+
+# ============================
+# Modelos treinados (opcional)
+# ============================
+*.pkl
+*.joblib
+*.h5
